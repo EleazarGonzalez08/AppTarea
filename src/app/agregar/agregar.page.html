@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Agregar tareas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list-header>
+    Tareas por hacer
+  </ion-list-header>
+
+
+  
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+
+        <ion-input type="text" placeholder="Nombre tarea" (keyup.enter)="agregarTarea()"></ion-input>
+
+        <ion-item>
+          <ion-label>
+            tarea1
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  
+</ion-content>
